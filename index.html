@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quiz</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <div class="container">
+                <div class="quiz-container">
+                    <div id="question-container">
+                        <h2 id="question-text"></h2>
+                        <div class="options" id="options-container"></div>
+                        <div class="messages">
+                            <div hidden id="success-message"></div>
+                            <div hidden id="failure-message"></div>
+                        </div>
+                        <div class="actions">
+                            <button
+                                class="button-primary"
+                                id="submit-answer"
+                                onclick="submitAnswer()"
+                            >
+                                Vasta
+                            </button>
+                            <button
+                                class="button-next"
+                                id="next-question"
+                                onclick="nextQuestion()"
+                                style="display: none"
+                            >
+                                <span class="icon-next">></span
+                                ><span id="next-question-label"
+                                    >Järgmine küsimus</span
+                                >
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <div id="score"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="/index.js"></script>
+</html>
